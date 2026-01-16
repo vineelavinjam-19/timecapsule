@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Time Capsule</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background: white;
+    padding: 25px;
+    width: 360px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+input, textarea, button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+}
+textarea {
+    height: 80px;
+    resize: none;
+}
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+button:hover {
+    background: #45a049;
+}
+.status {
+    margin-top: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h2>🕰 Time Capsule</h2>
+
+<input type="email" id="email" placeholder="Recipient Email" required>
+<textarea id="message" placeholder="Write your message..."></textarea>
+
+<label>Send Date & Time</label>
+<input type="datetime-local" id="send_at">
+
+<button onclick="sendMessage()">Schedule Message</button>
+<div class="status" id="status"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
