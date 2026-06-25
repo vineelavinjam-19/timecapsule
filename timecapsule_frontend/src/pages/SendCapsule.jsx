@@ -1,0 +1,1 @@
+export default function SendCapsule(){return <div>Send Capsule</div>}

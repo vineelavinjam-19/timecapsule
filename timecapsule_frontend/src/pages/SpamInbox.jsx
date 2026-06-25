@@ -1,0 +1,1 @@
+export default function SpamInbox(){return <div>Spam Inbox</div>}

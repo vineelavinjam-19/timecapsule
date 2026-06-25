@@ -1,0 +1,1 @@
+export default function UnlockCapsule(){return <div>Unlock Capsule</div>}
